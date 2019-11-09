@@ -4,19 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/name_tv"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/small_margin"
-        android:layout_weight="1"
         android:fontFamily="@font/roboto_thin"
         android:padding="@dimen/small_padding"
         android:text="@string/my_name"
         android:textAlignment="center"
-        android:textColor="@android:color/black"
+        android:textColor="#FCFCFC"
         android:textSize="@dimen/tv_size" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/contDes"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
 
 </LinearLayout>
