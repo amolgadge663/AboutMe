@@ -28,6 +28,16 @@
         android:inputType="textPersonName"
         android:textAlignment="center" />
 
+    <Button
+        android:id="@+id/doneBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"

@@ -129,4 +129,5 @@ Add a ScrollView with a TextView showing information about yourself to the layou
 Style the TextView with NameStyle, and add additional styling to separate the scrollable text from the edges of the screen.\n
 Add some spacing between the lines using the lineSpacingMultiplier property to the TextView.\n</string>
     <string name="hintName">Enter Your Name Here</string>
+    <string name="done">Done</string>
 </resources>
