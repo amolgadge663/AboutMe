@@ -16,8 +16,17 @@
         android:padding="@dimen/small_padding"
         android:text="@string/my_name"
         android:textAlignment="center"
-        android:textColor="#FCFCFC"
+        android:textColor="#000000"
         android:textSize="@dimen/tv_size" />
+
+    <EditText
+        android:id="@+id/nickNameET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hintName"
+        android:inputType="textPersonName"
+        android:textAlignment="center" />
 
     <ImageView
         android:id="@+id/imageView"
