@@ -6,22 +6,24 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.databinding.DataBindingUtil
+import com.amolsoftwares.aboutme.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        //setContentView(R.layout.activity_main)
 
-        val editText: EditText = findViewById(R.id.nickNameET)
-        val textView: TextView = findViewById(R.id.name_tv)
-        val btn: Button = findViewById(R.id.doneBTN)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        btn.setOnClickListener {
-            textView.text = editText.text
-            editText.visibility = View.GONE
-            textView.visibility = View.VISIBLE
-            btn.visibility = View.GONE
+        binding.doneBTN.setOnClickListener {
+            binding.nameTv.text = binding.nickNameET.text
+            binding.nickNameET.visibility = View.GONE
+            binding.nameTv.visibility = View.VISIBLE
+            binding.doneBTN.visibility = View.GONE
 
         }
 
