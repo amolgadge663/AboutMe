@@ -12,12 +12,15 @@ import com.amolsoftwares.aboutme.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private val myName: MyName = MyName("A. K. Gadage")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        binding.myName = myName
 
         binding.doneBTN.setOnClickListener {
             binding.nameTv.text = binding.nickNameET.text

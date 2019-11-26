@@ -3,6 +3,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <data>
+        <variable
+            name="myName"
+            type="com.amolsoftwares.aboutme.MyName" />
+    </data>
+
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,7 +22,7 @@
             android:layout_margin="@dimen/small_margin"
             android:fontFamily="@font/roboto_thin"
             android:padding="@dimen/small_padding"
-            android:text="@string/my_name"
+            android:text="@={myName.name}"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="@dimen/tv_size" />
